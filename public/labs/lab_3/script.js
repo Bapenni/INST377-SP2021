@@ -9,7 +9,6 @@ for(let li of carousel.querySelectorAll('li')) {
 
 let width = 130;
 let count = 3;
-
 let list = carousel.querySelector('ul');
 let listElems = carousel.querySelectorAll('li');
 
