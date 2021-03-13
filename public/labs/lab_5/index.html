@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Brandon Pennington Lab 5</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+</head>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+crossorigin=""></script>
+<body>
+<div class="container"></div>
+    <div class="columns">
+        <div class="column is-half">
+            <h1 class="title is-2 has-text-centered">Brandon Pennington Lab 5</h1>
+            <h2 class="subtitle is-4 has-text-centered">Zip Code Food Search</h2>
+                <form autocomplete="off" onsubmit="return false">
+                <div class="field">
+                    <div class="control">
+                        <label class="label" for="search">Search</label>
+                        <input class="input" label="search" type="text" id="search" name="search" placeholder="Enter ZIP Code">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button id="submit-button" class="button is-link">Submit</button>
+                    </div>
+                </div>
+                </form>
+
+                <ul class='filteredList' id='filteredList'></ul>
+
+            </div>
+            <div class="column">
+                <div id="mapid"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
