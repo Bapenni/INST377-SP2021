@@ -6,6 +6,12 @@ h1 {
     text-align: center;
 }
 
+p {
+  display: flex;
+  max-width: 225px;
+  
+}
+
 .container {
     width: 80%;
     max-width: 1200px;
